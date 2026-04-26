@@ -1,0 +1,20 @@
+services:
+    ezpublish.fieldType.ezxmltext:
+        class: eZ\Publish\Core\FieldType\XmlText\Type
+        parent: Ibexa\Core\FieldType\FieldType
+        arguments:
+            - '@?ezpublish.fieldType.ezxmltext.validator.internal_link'
+        tags:
+            - {name: ibexa.field_type, alias: ezxmltext}
+
+    ezpublish.fieldType.ezxmltext.formMapper:
+        class: eZ\Publish\Core\FieldType\XmlText\FormMapper
+        tags:
+            - { name: ibexa.field_type.form_mapper.value, fieldType: ezxmltext }
+
+    ezpublish.fieldType.ezxmltext.formType:
+        class: eZ\Publish\Core\FieldType\XmlText\FormType
+        arguments:
+            - "@ibexa.api.service.field_type"
+        tags:
+            - { name: form.type }

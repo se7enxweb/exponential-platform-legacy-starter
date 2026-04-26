@@ -1,0 +1,46 @@
+parameters:
+    ezpublish.fieldType.ezxmltext.converter.html5.resources: "%kernel.project_dir%/vendor/se7enxweb/ezplatform-xmltext-fieldtype/lib/FieldType/XmlText/Input/Resources/stylesheets/eZXml2Html5.xsl"
+    ezpublish.fieldType.ezxmlText.converter.embedToHtml5.excludedAttributes: [view, node_id, object_id]
+
+services:
+    ezpublish.fieldType.ezxmltext.converter.html5:
+        class: eZ\Publish\Core\FieldType\XmlText\Converter\Html5
+        arguments:
+            - "%ezpublish.fieldType.ezxmltext.converter.html5.resources%"
+            - "@ibexa.config.resolver"
+
+    ezpublish.fieldType.ezxmltext.converter.expanding:
+        class: eZ\Publish\Core\FieldType\XmlText\Converter\Expanding
+        tags:
+            - { name: ezpublish.ezxml.converter, priority: 32 }
+
+    ezpublish.fieldType.ezxmltext.converter.embedLinking:
+        class: eZ\Publish\Core\FieldType\XmlText\Converter\EmbedLinking
+        tags:
+            - { name: ezpublish.ezxml.converter, priority: 24 }
+
+    ezpublish.fieldType.ezxmltext.converter.ezLinkToHtml5:
+        class: eZ\Publish\Core\FieldType\XmlText\Converter\EzLinkToHtml5
+        arguments:
+            - "@ibexa.api.service.location"
+            - "@ibexa.api.service.content"
+            - '@Ibexa\Bundle\Core\Routing\UrlAliasRouter'
+            - "@?logger"
+        tags:
+            - { name: ezpublish.ezxml.converter, priority: 16 }
+
+    ezpublish.fieldType.ezxmltext.converter.embedToHtml5:
+        class: eZ\Publish\Core\FieldType\XmlText\Converter\EmbedToHtml5
+        arguments:
+            - "@fragment.handler"
+            - "@ibexa.api.repository"
+            - "%ezpublish.fieldType.ezxmlText.converter.embedToHtml5.excludedAttributes%"
+            - "@?logger"
+        tags:
+            - { name: ezpublish.ezxml.converter, priority: 8 }
+
+    ezpublish.fieldType.ezxmltext.validator.internal_link:
+        class: eZ\Publish\Core\FieldType\XmlText\InternalLinkValidator
+        arguments:
+            - '@Ibexa\Contracts\Core\Persistence\Content\Handler'
+            - '@Ibexa\Contracts\Core\Persistence\Content\Location\Handler'

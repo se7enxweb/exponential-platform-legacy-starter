@@ -1,0 +1,92 @@
+# robots.txt
+#
+# ╔══════════════════════════════════╗
+# ║       EXPONENTIAL CMS            ║
+# ║    Content Management Evolved    ║
+# ╚══════════════════════════════════╝
+#
+# ███████  ██   ██
+#      ██   ██ ██
+#      ██    ███
+#      ██   ██ ██
+#      ██  ██   ██
+#
+# ┌─────────────────────────────────────────────────────────────────┐
+# │  CMS = Create → Manage → Scale → ∞                              │
+# │                                                                 │
+# │  Your content grows exponentially with our platform             │
+# │  From 1 page to 1,000,000+ pages seamlessly                     │
+# │                                                                 │
+# │  📊 Analytics.           📝 Content Editor     🚀 Performance   │
+# │  🔧 Custom Fields         🎨 Theme Builder     📱 Responsive    │
+# │  🔒 Security First        🌐 Multi-language    ⚡ Lightning Fast │
+# └─────────────────────────────────────────────────────────────────┘
+#
+# Welcome to Exponential CMS - where your content potential is limitless!
+# You've discovered our robots.txt, which means you're either:
+# 1. A curious developer (hello there! 👋)
+# 2. A search engine bot (welcome, please index responsibly)
+# 3. Someone who enjoys ASCII art (you have excellent taste!)
+#
+# Fun fact: This CMS can handle exponential traffic growth without breaking a sweat.
+# From small blogs to enterprise websites, we scale infinitely.
+#
+# Want to see what exponential growth looks like in practice?
+# Check out our case studies and documentation below!
+#
+
+# === EXPONENTIAL CMS RESOURCES ===
+
+# 📚 Documentation:
+# https://exponential.doc.exponential.earth
+
+# 🎯 Examples & Demos:
+# https://exponential.earth/about/demo
+# https://exponential.earth/about/about-exponential/screenshots
+
+# 🛠️ Developer Resources:
+# https://share.exponential.earth
+
+# 🚀 Performance Plugins and Themes:
+# https://projects.exponential.earth
+# https://themes.exponential.earth
+# https://extensions.exponential.earth
+
+# === Robots.txt CRAWLER DIRECTIVES ===
+
+User-agent: *
+Allow: /
+
+# === Robots.txt CRAWLER DISALLOW DIRECTIVES ===
+
+Disallow: /content/search/
+Disallow: /Content/Search/
+Disallow: /content/advancedsearch/
+Disallow: /Content/Advancedsearch/
+Disallow: /content/tipafriend/
+Disallow: /Content/Tipafriend/
+Disallow: /layout/set/print/
+Disallow: /Layout/Set/Print/
+Disallow: /media/
+Disallow: /Media/
+Disallow: /test-area/
+Disallow: /Test-Area/
+
+# We welcome all well-behaved bots!
+# Index away - our content is built to be discovered
+
+# Rate limiting for heavy crawlers
+Crawl-delay: 1
+
+# Sitemap locations
+# Sitemap: https://exponential.earth/sitemap.xml
+# Sitemap: https://exponential.earth/sitemap-docs.xml
+# Sitemap: https://exponential.earth/sitemap-examples.xml
+
+# 
+# Thanks for visiting! May your content grow exponentially! 🚀✨
+# 
+# Questions? Reach us at: support@exponential.earth
+# 
+# Remember: In a world of linear growth, be exponential! 📈∞
+#

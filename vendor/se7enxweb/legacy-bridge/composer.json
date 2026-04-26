@@ -1,0 +1,54 @@
+{
+    "name": "se7enxweb/legacy-bridge",
+    "description": "eZ Publish Legacy bridge for Ibexa 5.x / Symfony 7 — PHP 8.4 compatible",
+    "license": "GPL-2.0-or-later",
+    "type": "ibexa-bundle",
+    "authors": [
+        {
+            "name": "eZ Systems",
+            "email": "dev-team@ez.no"
+        },
+        {
+            "name": "7x",
+            "homepage": "https://se7enx.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.4",
+        "se7enxweb/ezpublish-legacy-installer": "^2.0.4",
+        "se7enxweb/exponential": "dev-main",
+        "se7enxweb/ezplatform-xmltext-fieldtype": "5.x-dev",
+        "se7enxweb/sevenx_exponential_platform_v5_database_translator": "dev-main",
+        "se7enxweb/ngsymfonytools": "v5.0.x-dev",
+        "se7enxweb/richtext-datatype-bundle": "*",
+        "se7enxweb/site-bundle": "5.0.x-dev",
+        "se7enxweb/site-legacy-bundle": "5.0.x-dev",
+        "ibexa/core": "^5.0",
+        "symfony/framework-bundle": "^7.4"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpunit/phpunit": "^9.5",
+        "matthiasnoback/symfony-dependency-injection-test": "^4.0",
+        "mikey179/vfsstream": "~1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "eZ\\Bundle\\EzPublishLegacyBundle\\": "bundle/",
+            "eZ\\Publish\\Core\\MVC\\Legacy\\": "mvc"
+        }
+    },
+    "scripts": {
+        "fix-cs": "php-cs-fixer fix -v --show-progress=estimating",
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "ezpublish-legacy-dir": "ezpublish_legacy",
+        "branch-alias": {
+            "dev-4.x": "4.0.0.x-dev",
+            "dev-5.x": "5.0.0.x-dev"
+        }
+    }
+}

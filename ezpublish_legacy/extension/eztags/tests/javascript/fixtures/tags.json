@@ -1,0 +1,37 @@
+{
+  "error_text": "",
+  "content": {
+    "status": "success",
+    "message": "",
+    "tags": [{
+      "parent_id": "0",
+      "parent_name": "",
+      "name": "coffee",
+      "id": "1",
+      "depth": 1,
+      "locale": "eng-GB"
+    }, {
+      "parent_id": "0",
+      "parent_name": "",
+      "name": "tea",
+      "id": "2",
+      "depth": 1,
+      "locale": "eng-GB"
+    }, {
+      "parent_id": "0",
+      "parent_name": "",
+      "name": "beer",
+      "id": "3",
+      "depth": 1,
+      "locale": "eng-GB"
+    }, {
+      "parent_id": "0",
+      "parent_name": "",
+      "name": "wine",
+      "id": "4",
+      "depth": 1,
+      "locale": "eng-GB",
+      "empty": true
+    }]
+  }
+}

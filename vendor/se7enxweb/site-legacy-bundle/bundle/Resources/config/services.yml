@@ -1,0 +1,27 @@
+services:
+    netgen_site_legacy.legacy_mapper.configuration:
+        class: Netgen\Bundle\SiteLegacyBundle\LegacyMapper\Configuration
+        public: false
+        arguments:
+            - "@ibexa.config.resolver"
+        tags:
+            - { name: kernel.event_subscriber }
+
+    netgen_site_legacy.command.symlink_legacy:
+        class: Netgen\Bundle\SiteLegacyBundle\Command\SymlinkLegacyCommand
+        arguments:
+            - "@kernel"
+            - "@filesystem"
+            - "%ezpublish_legacy.root_dir%"
+        tags:
+            - { name: console.command, command: 'ngsite:symlink:legacy' }
+
+    netgen_site_legacy.listener.disable_image_alias_notify:
+        class: Netgen\Bundle\SiteLegacyBundle\EventListener\DisableImageAliasNotifyListener
+        public: false
+        tags:
+            - { name: kernel.event_subscriber }
+
+    eZ\Publish\SPI\Search\VersatileHandler:
+        alias: ibexa.spi.search
+        public: true

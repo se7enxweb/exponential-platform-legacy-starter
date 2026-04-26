@@ -1,0 +1,5 @@
+services:
+    ezpublish.fieldType.indexable.ezxmltext:
+        class: eZ\Publish\Core\FieldType\XmlText\SearchField
+        tags:
+            - {name: ibexa.field_type.indexable, alias: ezxmltext}

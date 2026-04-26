@@ -1,0 +1,40 @@
+{
+    "name": "se7enxweb/site-legacy-bundle",
+    "description": "7x Netgen Site Legacy Bundle is an Exponential Platform / Ibexa OSS bundle that implements common features that are used by Netgen to implement websites. This bundle acts as a glue between new and legacy kernels.",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Netgen",
+            "homepage": "https://netgen.io"
+        },
+        {
+            "name": "Netgen",
+            "homepage": "https://netgen.io"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "se7enxweb/site-bundle": "^5.0",
+        "ezsystems/eztags-ls": "^2.2.2",
+        "se7enxweb/ngsymfonytools": "v5.0.x-dev",
+        "netgen/ezplatformsearch": "^2.0",
+        "netgen/enhancedselection2": "^2.1",
+        "netgen/ngclasslist": "^1.1",
+        "netgen/birthday": "^1.2",
+        "netgen/hideuntildate": "^2.0",
+        "netgen/ezclasslists": "^2.1",
+        "netgen/ezchangeclass": "^2.0",
+        "netgen/xrowmetadata": "^3.0",
+        "se7enxweb/legacy-bridge": "^5.0.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Netgen\\Bundle\\SiteLegacyBundle\\": "bundle/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-5.0.x": "5.0.x-dev"
+        }
+    }
+}
