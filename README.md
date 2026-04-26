@@ -1,4 +1,4 @@
-# Exponential Platform Legacy v5 — Full Legacy Bridge (Stable; Open Source; Starter Skeleton)
+# Exponential Platform Legacy Starter Distribution - Platform v5 — Full Legacy Bridge (Stable; Open Source; Starter Skeleton)
 
 [![PHP](https://img.shields.io/badge/PHP-8.3%2B-8892BF?logo=php&logoColor=white)](https://php.net)
 [![Symfony](https://img.shields.io/badge/Symfony-7.4%20LTS-000000?logo=symfony&logoColor=white)](https://symfony.com)
@@ -10,6 +10,8 @@
 > **Exponential Platform Legacy** is an open-source Digital Experience Platform (DXP/CMS) built on **Symfony 7.4 LTS** with **PHP 8.3+** — and ships with the **full Legacy Bridge enabled by default**, giving you the complete classic eZ Publish legacy kernel, legacy admin interface, and all legacy siteaccesses running live out of the box inside a modern Symfony 7.4 LTS application.
 
 This is the **DXP v5 Starter Skeleton** with **full Legacy Bridge support by default** — the recommended starting point for all new Exponential Platform Legacy v5 projects. The Legacy Bridge provides a complete, production-quality classic legacy kernel running in parallel with the modern Platform v5 OSS stack, with no friction between the two.
+
+This Starter Distribution is Powered By SQLite Database Default Configuration which works imeediatly in the browser upon installation.
 
 ---
 
